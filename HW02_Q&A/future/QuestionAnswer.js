@@ -68,7 +68,7 @@ const answerCheck = (playerObjectPlay , ans1 , ans2 , ans3 , ans4 , ans5) => {
             playerObjectPlay.score ++
         }
     }
-    console.log(playerObjectPlay)
+    showSummary(playerObjectPlay)
 }
 const playerPlay = (name , ans1 , ans2 , ans3 , ans4,ans5) => {
     let playerObjectPlay = new Object(player)
@@ -78,7 +78,7 @@ const playerPlay = (name , ans1 , ans2 , ans3 , ans4,ans5) => {
 }
 
 const showSummary = (playerObjectPlay) => {
-    console.log(`Name: ${playerObjectPlay.name} Score:${playerObjectPlay.score}`)
+    console.log(playerObjectPlay)
 }
 playerPlay("Thiraphat" , 4 , 1 ,3, 4 , 1);
 playerPlay("John" , 3, 4 ,3, 4 , 2);
